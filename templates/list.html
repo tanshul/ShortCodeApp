@@ -1,0 +1,29 @@
+<view title="">
+    <header class="bar bar-header bar-dark">
+      <button ng-click="toggleProjects()" class="button icon-left ion-navicon"  ></button>
+      <h1 class="title">{{getTitle()}} Short Codes</h1>  
+      <button class="button icon ion-search" ng-click="showSearch = !showSearch"></button>
+    </header>
+
+    <div class="bar bar-subheader item-input-inset" ng-show="!showSearch">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" autocorrect="off" >
+            <button class="button button-clear" ng-click="clearSearch()">X</button>
+        </label>
+        <!--button class="button button-clear" ng-click="search()">Search</button-->
+    </div>
+
+    <content has-footer="true" scroll="true" class="has-subheader">
+       <div class="list">
+        <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-left">          
+          <h2>{{ item.name }}</h2>
+          <p>{{ item.scode }}</p>
+         </a>
+      </div>
+    </content>  
+
+    <footer class="bar bar-footer bar-dark">
+    <h3 class="title">A Vodafone Fiji Service. Power to you.</h3>
+    </footer> 
+</view>

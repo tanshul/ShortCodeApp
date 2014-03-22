@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Vodafone Short Code Directory</title>
+    
+    <link href="http://code.ionicframework.com/0.9.25/css/ionic.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- angularjs scripts -->
+    <script src="lib/js/ionic.js"></script>
+    <script src="lib/js/angular/angular.js"></script>
+    <script src="lib/js/angular/angular-animate.js"></script>
+    <script src="lib/js/angular/angular-sanitize.js"></script>
+    <script src="lib/js/angular-ui/angular-ui-router.js"></script>
+    <script src="lib/js/ionic-angular.js"></script>
+
+    <!-- your app's script -->
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>    
+ 
+  </head>
+
+  <body ng-app="directory">
+    <side-menus>
+      <pane side-menu-content>
+        <nav-view></nav-view>
+      </pane>
+      <side-menu side="left">
+        <div class="bar bar-header bar-assertive">
+          <h1 class="title">Quick Find</h1>
+          </div>
+        </div>
+        <content has-header="true">
+           <ul class="list">
+            <a class="item item-stable smart" ng-href="#/directory/">Smart Dial</a>
+            <a class="item item-stable" ng-href="#/directory/Taxis/">Taxis</a>
+            <a class="item item-stable" ng-href="#/directory/Business/">Business</a>
+            <a class="item item-stable" ng-href="#/churches/">Churches</a>
+            <a class="item item-stable" ng-href="#/government/">Government</a>
+            <a class="item item-stable" ng-href="#/institutions/">Institutions</a>
+            <a class="item item-stable" ng-href="#/authority/">Local Authority</a>
+            <a class="item item-stable" ng-href="#/medical/">Medical Centres</a>
+            <a class="item item-stable" ng-href="#/organisations/">Organisations</a>
+            <a class="item item-stable" ng-href="#/personalities/">Personalities</a>
+          </ul>
+        </content>
+      </side-menu>
+    </side-menus>
+
+  </body>
+</html>

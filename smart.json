@@ -1,0 +1,69 @@
+	{
+	"directory": 
+	[
+
+	{
+	  "id": "0",
+	  "name": "Vodafone Services",
+	  "desc": "Main menu",
+	  "scode": "*124#",
+	  "type": "Smart Dial Options"	  
+	},
+	{
+	  "id": "1",
+	  "name": "Balance Check",
+	  "desc": "Gives breakdown of balance",
+	  "scode": "*131#",
+	  "type": "Smart Dial Options"	  
+	},
+	{
+	  "id": "2",
+	  "name": "My Account",
+	  "desc": "Allows to check balance",
+	  "scode": "*124*1#",
+	  "type": "Smart Dial Options"	  
+	},	
+	{
+	  "id": "3",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	},	
+	{
+	  "id": "3",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	},
+			{
+	  "id": "3",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	},
+	{
+	  "id": "3",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	},
+			{
+	  "id": "3",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	},
+	{
+	  "id": "4",
+	  "name": "Promotions",
+	  "desc": "States All Current Promotions",
+	  "scode": "*111#",
+	  "type": "Smart Dial Options"	  
+	}
+	]
+}

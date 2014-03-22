@@ -1,0 +1,34 @@
+	{
+	"directory": 
+	[
+
+	{
+	  "id": "0",
+	  "name": "Fiji Hockey Federation",
+	  "location": "The Hockey Centre, Laucala Bay, Suva",
+	  "scode": "5288",
+	  "type": "Taxi"	  
+	},
+	{
+	  "id": "1",
+	  "name": "Gospel Ex Students Association 2000 Decade",
+	  "location": "Gospel High School Suva",
+	  "scode": "5135",
+	  "type": "Taxi"	
+	},
+	{
+	  "id": "2",
+	  "name": "Fiji Hockey Federation",
+	  "location": "The Hockey Centre, Laucala Bay, Suva",
+	  "scode": "5288",
+	  "type": "Taxi"	
+	},
+	{
+	  "id": "3",
+	  "name": "Fiji Hockey Federation",
+	  "location": "The Hockey Centre, Laucala Bay, Suva",
+	  "scode": "5288",
+	  "type": "Taxi"	
+	}
+	]
+}
