@@ -4,6 +4,12 @@ angular.module('directory.controllers', [])
         $scope.sideMenuController.toggleLeft();
        };
 
+        $scope.searchKey = "";
+        
+        $scope.clearSearch = function () {
+            $scope.searchKey = "";
+         }
+
         var findAll = function() {
              $scope.sideMenuController.close();// hide side menu once clicked
              LoaderService.show();
@@ -24,7 +30,11 @@ angular.module('directory.controllers', [])
        $scope.toggleProjects = function() {
         $scope.sideMenuController.toggleLeft();
        };
-
+        $scope.searchKey = "";
+        
+        $scope.clearSearch = function () {
+            $scope.searchKey = "";
+         }
         var findAll = function(listingtype) {
              $scope.sideMenuController.close();// hide side menu once clicked
              LoaderService.show();
