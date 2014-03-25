@@ -16,7 +16,8 @@
 
     <content has-footer="true" scroll="true" class="has-subheader">
        <div class="list">
-        <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-left">          
+        <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-icon-left item-icon-right">  
+          <i class="icon ion-ios7-telephone-outline" style="color:green"></i>        
           <h2>{{ item.name }}</h2>
           <p>{{ item.scode }}</p>
          </a>
@@ -24,6 +25,8 @@
     </content>  
 
     <footer class="bar bar-footer bar-dark">
-    <h3 class="title">A Vodafone Fiji Service. Power to you.</h3>
+      <div class="title">
+        <a href="#/directory/add" class="button button-clear"><i class="icon ion-ios7-plus-outline"></i> Get Listed</a><br/>         
+      </div> 
     </footer> 
 </view>

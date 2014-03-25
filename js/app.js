@@ -26,16 +26,16 @@ angular.module('directory', ['ionic', 'directory.services', 'directory.controlle
                 controller: 'DirectoryListCtrl'
             })            
 
-            .state('movie-detail', {
-                url: '/movie/:movieid',
-                templateUrl: 'templates/movie-detail.html',
-                controller: 'MovieDetailCtrl'
+            .state('add', {
+                url: '/directory/add',
+                templateUrl: 'templates/add.html',
+                controller: 'AddCtrl'
             })
 
-            .state('soon-index', {
-                url: '/soon/',
-                templateUrl: 'templates/soon-index.html',
-                controller: 'SoonIndexCtrl'
+            .state('help', {
+                url: '/directory/help',
+                templateUrl: 'templates/help.html',
+                controller: 'HelpCtrl'
             });
 
         // if none of the above states are matched, use this as the fallback

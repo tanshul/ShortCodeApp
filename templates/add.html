@@ -1,0 +1,47 @@
+<view title="'Fiji Taxi Short Codes'">
+    <header class="bar bar-header bar-dark">
+      <button ng-click="toggleProjects()" class="button icon-left ion-navicon"  ></button>
+      <h1 class="title">Request a Short Code</h1>  
+      <a class="button icon ion-ios7-help-outline" href="#/directory/help"></a>
+    </header>
+
+    <content has-footer="true" scroll="true" class="has-header">
+    	<form ng-submit="submitForm()">
+			<div class="list">
+			<!-- submitted thank you message -->
+			  <label ng-show="formposted" class="item item-energized">
+			    <span class="input-label">Your message has been sent to us. Thank you.</span>
+ 			  </label>	
+
+			  <label class="item item-input">
+			    <span class="input-label">Company</span>
+			    <input type="text" placeholder="Best Company Ltd" required>
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Email</span>
+			    <input type="email" placeholder="johndoe@email.com" required>
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Address</span>
+			    <input type="text" placeholder="Lot 4 Bhindi Road, Suva" >
+			  </label>	
+			  <label class="item item-input">
+			    <span class="input-label">Phone</span>
+			    <input type="tel" placeholder="999999" pattern="[89][0-9]{6}" maxlength="7" required>
+			  </label>				  		  
+			</div>  
+			<div class="padding">
+	        	<button class="button button-block button-assertive">Send Request</button>
+	      	</div>  
+      	</form>
+    </content> 
+
+    <footer class="bar bar-footer bar-dark">
+      <div class="title">
+        <a ng-href="#/directory" class="button button-clear"><i class="icon ion-home"></i></button><br/>               
+      </div>        
+    </footer> 
+
+</view>
+
+

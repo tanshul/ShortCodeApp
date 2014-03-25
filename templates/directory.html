@@ -1,30 +1,70 @@
-<view title="'Fiji Taxi Short Codes'">
+<view title="'Vodafone Directory'">
     <header class="bar bar-header bar-dark">
       <button ng-click="toggleProjects()" class="button icon-left ion-navicon"  ></button>
-      <h1 class="title">Smart Dial Options</h1>  
-      <button class="button icon ion-search" ng-click="showSearch = !showSearch"></button>
+      <h1 class="title">Vodafone Directory</h1>  
+      <a class="button icon ion-ios7-plus-outline" href="#/directory/add"></a>
     </header>
 
-    <div class="bar bar-subheader item-input-inset" ng-show="!showSearch">
-        <label class="item-input-wrapper">
-            <i class="icon ion-ios7-search placeholder-icon"></i>
-            <input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" autocorrect="off" >
-            <button class="button button-clear" ng-click="clearSearch()">X</button>
-        </label>
-        <!--button class="button button-clear" ng-click="search()">Search</button-->
-    </div>
-
-    <content has-footer="true" scroll="true" class="has-subheader">
-       <div class="list">
-         <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-left">          
+    <content has-footer="true" scroll="true" class="has-header">
+       <!--div class="list">
+         <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-icon-left item-icon-right">    
+          <i class="icon ion-ios7-telephone-outline" style="color:green"></i>
           <h2>{{ item.name }}</h2>
           <p>{{ item.scode }}</p>
-         </a>
-      </div>
+           </a>
+      </div-->
+
+
+<!--div class="row ">
+  <div class="col"><a ng-href="#/directory/"><img src="http://lorempixel.com/320/120/cats/"></a></div>
+  </div>       
+<div class="row">
+  <div class="col col-50"><a ng-href="#/directory/Taxis/"><img src="img/taxi.jpg" width="150" height="120"></a></div>
+  <div class="col col-50"><a ng-href="#/directory/Business/"><img src="http://lorempixel.com/300/120/business/"></a></div>
+</div>     
+<div class="row">
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/abstract/"></div>
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/people/"></div>
+</div>
+<div class="row">
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/city/"></div>
+  <div class="col col-50"><img src="http://lorempixel.com/300/120/food/"></div>
+</div>
+<div class="row">
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/sports/"></div>
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/fashion/"></div>
+</div>
+<div class="row">
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/nightlife/"></div>
+  <div class="col col-50"><img src="http://lorempixel.com/150/120/technics/"></div>
+</div--> 
+     
+      <div class="row">
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Taxis/">Taxis</a></div>
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Business/">Business</a></div>
+      </div>     
+      <div class="row">
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Taxis/">Chruches</a></div>
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Business/">Government</a></div>
+      </div> 
+      <div class="row">
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Taxis/">Institutions</a></div>
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Business/">Local Authority</a></div>
+      </div> 
+      <div class="row">
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Taxis/">Medical Centres</a></div>
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Business/">Organisations</a></div>
+      </div> 
+      <div class="row">
+        <div class="col col-50"><a class="button button-block button-assertive" ng-href="#/directory/Taxis/">Personalities</a></div>
+        <div class="col col-50"><a class="button button-block button-assertive button-outline " ng-href="#/directory/Smart/">Smart Dial</a></div>
+      </div> 
+      
     </content>  
+
     <footer class="bar bar-footer bar-dark">
-      <h2 class="title">
-        Footer
-      </h2>
-     </footer> 
+      <div class="title">
+        A Vodafone Fiji Service.         
+      </div>        
+    </footer> 
 </view>
