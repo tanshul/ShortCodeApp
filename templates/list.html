@@ -17,11 +17,6 @@
     <content has-footer="true" scroll="true" class="has-subheader">
     
        <div class="list">
-        <a  href="tel:*131#" class="item item-icon-left item-icon-right">  
-          <i class="icon ion-ios7-telephone-outline" style="color:green"></i>        
-          <h2>Account Balance</h2>
-          <p>*131#</p>
-         </a>
         <a ng-repeat="item in items | filter:searchKey" href="tel:{{item.scode}}" class="item item-icon-left item-icon-right">  
           <i class="icon ion-ios7-telephone-outline" style="color:green"></i>        
           <h2>{{ item.name }}</h2>
