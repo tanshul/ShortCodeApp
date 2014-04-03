@@ -31,7 +31,7 @@ angular.module('directory.controllers', [])
         var findAll = function(listingtype) {
             $scope.sideMenuController.close();// hide side menu once clicked
  
-            $http.get('https://dl.dropboxusercontent.com/s/8s5moq4n1h0ga4z/Taxis.json',{ cache: true})
+            $http.get('http://tanshul.com/json/Taxis.json',{ cache: true})
             .success(function(data){
                 $scope.getTitle = function () {return listingtype}    //hack to get title working                
                  $scope.items = data.directory;
