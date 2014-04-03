@@ -28,6 +28,6 @@
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
  
     <access origin="*"/> <!-- allow local pages -->
-    <access origin="http://github.com" />                
+    <access origin="https://dropbox.com" />                
 
 </widget>
